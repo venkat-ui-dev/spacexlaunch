@@ -1,0 +1,138 @@
+@font-face{
+    src:url('../fonts/Roboto/Roboto-Regular.ttf');
+    font-family: 'Roboto';
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2;
+    font-family: 'Roboto', sans-serif;
+}
+/* Common Components */
+.text-center{
+    text-align: center;
+}
+.container{
+    margin: 20px;
+}
+/* Left Side Filter */
+.left-container{
+    width: 15%;
+    background-color: #fff;
+    padding: 10px 10px 40px;
+    margin: 0;
+    border-radius: 5px;
+    float: left;
+}
+.left-container h3{
+    margin: 5px 0;
+    display: inline-block;
+}
+.sub-header h4{
+    margin-bottom: 0;
+}
+.sub-header hr{
+    width: 60%;
+}
+.column{
+    width: 49%;
+    display: inline-block;
+}
+.filter-btn{
+    background-color: #c5e09b;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.filter-btn:hover,.filter-btn:focus, .filter-btn:active{
+    background-color: #7CB803;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Right Side Content */
+.right-container{
+    width: 82%;
+    padding: 1px 10px;
+    margin: 0;
+    float: right;
+}
+.right-side-single{
+    width: 23%;
+    margin: 0 12px 20px;
+    display: inline-block;
+}
+.bg-white{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+.bg-white ul{
+    min-height: 40px;
+}
+.right-side-single img{
+    width: 92%;
+    background: #F2F2F2;
+    padding: 0 10px;
+}
+.right-side-single h4{
+    color: #41466B;
+    font-weight: 700;
+    min-height: 40px;
+}
+.colorChanged{
+    background-color: #7CB803;
+}
+.clear-filter{
+    display: inline-block;
+    float: right;
+    margin: 5px 0;
+}
+.dev-name span{
+    font-weight: 700;
+}
+/* Media Query */
+@media only screen and (min-width: 1024px) and (max-width: 1440px){
+    .right-side-single {
+        width: 22%;
+        margin: 0 12px 20px;
+    }
+    .right-container {
+        width: 82%;
+        padding: 0;
+    }
+    .left-container {
+        width: 15%;
+    }
+}
+@media only screen and (min-width: 700px) and (max-width: 1023px){
+    .right-side-single {
+        width: 47%;
+        margin: 0 9px;
+    }
+    .right-container {
+        width: 100%;
+        padding: 0;
+    }
+    .left-container {
+        width: 97%;
+    }
+    .bg-white{
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 699px){
+    .right-side-single {
+        width: 97%;
+        margin: 0 12px;
+    }
+    .right-container {
+        width: 100%;
+    }
+    .left-container {
+        width: 94%;
+    }
+    .bg-white{
+        margin-top: 20px;
+    }
+}

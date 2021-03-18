@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SpaceX Launch Programs">
+    <meta name="og:title" property="og:title" content="SpaceX Launch Programs">
+    <title>SpaceX Launch Programs</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-header">
+            <h1>SpaceX Launch Programs</h1>
+        </div>
+        <div class="left-container">
+            <div class="left-header">
+                <h3>Filters</h3>
+                <a href="#" onclick="clearFilter()" class="clear-filter"> Clear Filter</a>
+            </div>
+            <div class="sub-header text-center">
+                <h4>Launch Year</h4>
+                <hr>
+            </div>
+            <div class="year-filter"></div>
+            <div class="sub-header text-center">
+                <h4>Successful Launch</h4>
+                <hr>
+            </div>
+            <div class="launch-filter">
+                <div class="column text-center">
+                    <p><span class="filter-btn" id="launch_true" onclick="launchFilterData('true')">True</span></p>
+                </div>
+                <div class="column text-center">
+                    <p><span class="filter-btn" id="launch_false" onclick="launchFilterData('false')">False</span></p>
+                </div>
+            </div>
+            <div class="sub-header text-center">
+                <h4>Successful Landing</h4>
+                <hr>
+            </div>
+            <div class="landing-filter">
+                <div class="column text-center">
+                    <p><span class="filter-btn" id="landing_true" onclick="landingFilterData('true')">True</span></p>
+                </div>
+                <div class="column text-center">
+                    <p><span class="filter-btn" id="landing_false" onclick="landingFilterData('false')">False</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="right-container"></div>
+    </div>
+    <script src="./assets/lib/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+</body>
+</html>
